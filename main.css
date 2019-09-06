@@ -30,11 +30,56 @@ h2 {
     padding-top: 25px;
 }
 
+/*NAV CSS*/
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    border: 2px black solid;
+    padding: 5px 0;
+    background-color: white;
+    
+}
+
+nav ul li:hover, nav ul li:focus {
+    background-color: skyblue;
+    
+}
+
+nav ul li a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:active {
+    color: red;
+}
+nav ul li a:link{
+    color: black;
+}
+nav ul li a:visited {
+    color: black;
+}
+/* MAIN CSS BELOW*/
+.beer {
+    height: 300px;
+    width: auto;
+    margin: 15px 15px;
+}
+
 main {
     background-image: url(images/natures.jpg);
     background-size: cover;
     position: relative;
-    bottom: 25px;
+    bottom: -25px;
+    height: 600px;
 }
 
 main>h1, main>p {
@@ -45,7 +90,7 @@ main>h1 {
 padding-top: 30px;
 }
 
-main div {
+main section {
     width: 500px;
     border: 2px solid black;
     margin: 20px;
@@ -54,17 +99,17 @@ main div {
     background-color: rgba(78,78,78, .5);    
 }
 
-main div:nth-child(even) {
+main section:nth-child(even) {
     position: relative;
     left:300px;
 }
 
-main div:nth-child(odd) {
+main section:nth-child(odd) {
     position: static;
     
 }
 
-main div:nth-child(odd) p{
+main section:nth-child(odd) p{
     text-indent: 24px;
 }
 
@@ -72,7 +117,7 @@ footer {
     height: 50px;
     background-color: #49DEE3;
     position: relative;
-    bottom: 40px;
+    bottom: -20px;
 }
 
 #copyright {
