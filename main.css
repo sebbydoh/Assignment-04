@@ -126,3 +126,8 @@ footer {
     color:black;
     padding-top: 20px;
 }
+
+.email {
+    margin-left: 40px;
+    font-weight: bold;
+}
